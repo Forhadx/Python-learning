@@ -32,3 +32,11 @@ b = li_5[:]
 b[0] = 'x'
 print(li_5)  # ['a', 'b', 'c']
 print(b)     # ['x', 'b', 'c']
+
+
+# another process of copy
+x = [1, 2, 4]
+y = x.copy()
+y[0] = 99
+print(x)    # [1, 2, 4]
+print(y)    # [99, 2, 4]
