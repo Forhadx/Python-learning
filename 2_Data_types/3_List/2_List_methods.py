@@ -1,34 +1,61 @@
-"""-----------list Length ---------------"""
+"""
+    length: len(arr)
+
+    add: arr.append(val)
+    add by index: arr.inset(index, val)
+    marge list: arr1.extend(arr2)
+
+    remove: arr.pop()
+    remove by index: arr.pop(index)
+    clear list: arr.clear()
+
+    find index: arr.index(val)
+    bool check: print(val in arr)  // t / f
+    count: arr.count(val)
+
+    sort: arr.sort()
+    sorted copy: sorted(arr)  // arr not sorted 
+
+    reverse: arr.reverse()
+    reverse copy: arr[::-1]
+
+    rage: list(range(10)), list(range(3, 20))
+
+    join: ' '.joint(arr)
+
+    list unpacking: a, b, *c = [1, 2, 3, 4, 5, 6]
+
+"""
+
+
+
+
+print('-----------list Length ---------------')
 # list length
-from typing import List
-
-
+#from typing import List
 l = [1, 2, 3, 4]
 print(len(l)) # 4
 
 
-"""-----------list Add ---------------"""
+print('-----------list Add ---------------')
 # Adding value in last index
 m = ['a', 'b', 'c']
 m.append('d')
 print(m)    # ['a', 'b', 'c', 'd']
-
 
 # Adding value by index: list.insert(index, value)
 n = ['a', 'b', 'c', 'd']
 n.insert(1, 'X')
 print(n)    # ['a', 'X', 'b', 'c', 'd']
 
-
 # merge two list
 li_1 = [1, 2, 3]
 li_2 = ['a', 'b']
 li_1.extend(li_2)
-
 print(li_1) # [1, 2, 3, 'a', 'b']
 
 
-"""-----------list Remove ---------------"""
+print('-----------list Remove ---------------')
 # remove last index val
 a = [1,2,3,4,5]
 a.pop()
@@ -46,8 +73,8 @@ c.clear()
 print(c)    # []
 
 
-"""----------- find index , Count value  ---------------"""
 
+print('----------- find index , Count value  --------------')
 d = ['a', 'b', 'c', 'd', 'e']
 print(d.index('c')) # 2
 
@@ -64,7 +91,7 @@ e = ['a', 'b', 'a', 'c', 'a']
 print(e.count('a')) # 3
 
 
-"""----------- list sorting ---------------"""
+print('----------- list sorting ---------------')
 # sort
 f = [3, 5, 2, 1, 6, 2]
 f.sort()
@@ -72,31 +99,28 @@ print(f)    # [1, 2, 2, 3, 5, 6]
 
 # sorted - produce a new array
 arr = [3, 2, 5, 9, 2, 4]
-print(sorted(arr))  # [2, 2, 3, 4, 5, 9]
-print(arr)     # [3, 2, 5, 9, 2, 4]
+arr2 = sorted(arr)
+print('arr: ',arr)     # [3, 2, 5, 9, 2, 4]
+print('arr2: ',arr2)   # [2, 2, 3, 4, 5, 9]
 
 
-"""----------- reverse ---------------"""
+print('----------- reverse ---------------')
 # reverse list
-r = [4, 2, 0, 3]
+r = [41, 27, 10, 30]
 r.reverse()
-print(r)    # [3, 0, 2, 4]
-
+print('reverse: ',r)    # [30, 10, 27, 41]
 
 # copy a list and reverse
 p = [1, 2, 3, 4]
-print(p[::-1])  # [4, 3, 2, 1]
-print(p)    # [1, 2, 3, 4]
+q = p[::-1]
+print('q: ',q)  # [4, 3, 2, 1]
+print('p: ',p)    # [1, 2, 3, 4]
 
 
-"""----------- range ---------------"""
-# range
 
-print(list(range(2, 10)))   
-# [2, 3, 4, 5, 6, 7, 8, 9]
-
-print(list(range(10)))
-# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print('----------- range ---------------')
+print(list(range(4, 10)))  # [4, 5, 6, 7, 8, 9]
+print(list(range(10))) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
 """----------- join ---------------"""

@@ -18,7 +18,6 @@ t_3 = t_1[0 : 3]
 print(t_3)  # (1, 2, 3)
 
 
-
 # unpacking
 x, y, *other, z = (1, 2, 3, 4, 5, 6, 7)
 
@@ -26,9 +25,6 @@ print(x)    # 1
 print(y)    # 2
 print(other) # [3, 4, 5, 6] 
 print(z)    # 7
-
-
-
 
 
 # length, count, index

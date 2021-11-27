@@ -8,58 +8,47 @@
 """
 
 
-""""----------------- string ------------------"""
-
+print('----------------- string ------------------')
 print('hi') # hi
-
 print("hello") # hello
 
 
-""""----------------- Escape Sequence -------------"""
-
+print('----------------- Escape Sequence -------------')
 print("i'm cool") # i'm cool
-
 print('i\'m cool') # i'm cool
-
 print("It\'s \"kind of\" sunny") # It's "kind of" sunny
 
 
-""""----------------- string concatenation ----------------"""
-
+print('----------------- string concatenation ----------------')
 """
     print('hi ' + 4) # error
     print('hi ' - 4) # error
     print('hi ' / 4) # error
 """
-
 print('hi ' * 4) # hi hi hi hi
-
 print('+' * 5) # +++++
 
 
-""""---------------- type conversation ----------------"""
+print('---------------- type conversation ----------------')
+# string <-> int <-> float 
 
-# string to int and float 
 a = '21'
-print(int(a)) # 21 , int value
+print(int(a)) # 21 , str to int value
+print(float(a)) # 21.0 , str to float value
 
-print(float(a)) # 21.0 , float value
-
-
-# int and float to string
 b = 11
-print(str(b)) # 11 , str value
+print(str(b)) # 11 , int to str value
 
 c = 22.21
-print(str(c)) # 22.21 , str value
+print(str(c)) # 22.21 , float to str value
 
 
-""""---------------- formatted String ----------------"""
 
+print('---------------- formatted String ----------------')
 name = 'forhad'
 age = 24
 
-print(f'my name is {name}. i am {age}') 
+print(f'my name is {name}. i am {age}.') 
 # my name is forhad. i am 24
 
 print('my name is {}'.format('forhad'))
@@ -69,15 +58,12 @@ print('I am {}'.format(age))
 # I am 24
 
 
-""""---------------- String Indexes ----------------"""
-
+print('---------------- String Indexes ----------------')
 num = '01234567'
 
 print(num[2]) # 2
-
 print(num[-1])  # 7
 print(num[-3])  # 5
-
 
 #[start:stop]
 print(num[1:3]) # 12
@@ -87,24 +73,20 @@ print(num[2:6]) # 2345
 print(num[0:5:2]) # 024
 print(num[0:7:3]) # 036
 
-
 print(num[0:0]) # no value print
-
 print(num[2: ]) # 234567
 print(num[ :5]) # 01234
-
 print(num[ : : 2]) # 01234567 , cz start,end is not define so print all val
 print(num[::-1])    # 76543210, reverse value print
 print(num[::-2])    # 7531, reverse value with stepover
 
 
 
-""""---------------- String built in function ----------------"""
-
+print('---------------- String built in function ----------------')
 name = 'shAmSuL HaqUE foRhAd'
 
 # length of string
-print(len(name))    # 6
+print(len(name))    # 20
 
 # uppercase
 print(name.upper()) # SHAMSUL HAQUE FORHAD

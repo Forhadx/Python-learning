@@ -1,4 +1,6 @@
 """ Dictionary"""
+
+print('----------------- initial dictionary ---------------')
 d_1 = {
     'a': [11, 22, 33],
     'b': 'hello',
@@ -10,12 +12,12 @@ print(d_1['a'])     # [1, 2, 3]
 print(d_1['a'][2])  # 33
 
 
-""" copy dictionary """
+print('------------------ copy dictionary -------------------')
 x = d_1.copy()
 print(x)  # {'a': [11, 22, 33], 'b': 'hello', 'c': True}
 
 
-""" Dicionary in List """
+print('------------------ Dicionary in List -------------------')
 l_1 = [
     {
         'a': [1, 2, 3],
@@ -32,7 +34,7 @@ print(l_1[1]['a'][1])   # 6
 
 
 
-""" Dictionary keys """
+print('------------------ Dictionary keys -------------------')
 d_2 = {
     'aa' : 'hi',
     12: [1, 3, 5],
@@ -46,7 +48,7 @@ print(d_2[True])   # bro
 
 
 
-""" Dictionary Methods """
+print('------------------ Dictionary Methods -------------------')
 user = {
     'name': 'rose',
     'age': 23
@@ -65,8 +67,8 @@ print(user.get('a', 21))  # 'a' is not exist , but give the value 21 of 'a'
 print(user) # {'name': 'rose', 'age': 23}, 'a' value dnt add in user dict
 
 
-""" Check Dictionary """
 
+print('------------------ Check Dictionary -------------------')
 u = {
     'a': 'aaa',
     'b': 'bbb',
@@ -90,7 +92,7 @@ print(u.items())    # dict_items([('a', 'aaa'), ('b', 'bbb'), ('c', 'ccc')])
 
 
 
-""" add, remove (val, keys) in Dictionary """
+print('------------------ add, remove (val, keys) in Dictionary -------------------')
 u_1 = {
     'a': [1, 2, 3],
     'b': 'hello',
@@ -106,7 +108,7 @@ print(u_1)  # {'b': 'hello', 'c': 'c'}
 u_1.update({'x':'xxx'})
 print(u_1)  # {'b': 'hello', 'c': 'c', 'x': 'xxx'}
 
-
+print('---------------- clear ------------------')
 #  clear dictionary
 print(u_1.clear())  # None
 print(u_1)  # {}
