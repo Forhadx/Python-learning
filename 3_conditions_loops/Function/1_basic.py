@@ -7,8 +7,10 @@
 def show():
     print('hi')
 
+
 show()  # hi
-print(show) # <function show at 0x000002165D712C20>  -> this is address location in memory
+# <function show at 0x000002165D712C20>  -> this is address location in memory
+print(show)
 print('-----------------------------------')
 
 
@@ -16,18 +18,20 @@ print('-----------------------------------')
 def details(name, age):
     print(f'name is {name} and age is {age}')
 
-details('forhad', 25) # name is forhad and age is 25
+
+details('forhad', 25)  # name is forhad and age is 25
 print('-----------------------------------')
 
 
 # fun-3 -> pass position argument
-details(age= 30, name='max') # name is max and age is 30
+details(age=30, name='max')  # name is max and age is 30
 print('-----------------------------------')
 
 
 # fun-4 -> keyword arguments
-def person(name="Nobody", salary = 0):
+def person(name="Nobody", salary=0):
     print(f"{name}'s salary is {salary}")
+
 
 person('ratul', 200)               # ratul's salary is 200
 person(name='forhad', salary=100)  # forhad's salary is 100
